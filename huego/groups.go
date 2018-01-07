@@ -1,10 +1,10 @@
 package huego
 
 type Group struct {
-	Name string `json:"name"`
-	Lights []string `json:"lights"`
-	GroupType string `json:"group_type"`
-	Action Action `json:"action,omitempty"`
+	Name      string   `json:"name"`
+	Lights    []string `json:"lights"`
+	GroupType string   `json:"group_type"`
+	Action    Action   `json:"action,omitempty"`
 }
 
 type Action struct {
@@ -20,11 +20,11 @@ type Action struct {
 }
 
 type GroupAttributes struct {
-	Action Action `json:"action"`
-	Lights []string `json:"lights"`
-	Name string `json:"name"`
-	GroupType string `json:"type"`
-	ModelID string `json:"modelid"`
-	UniqueID string `json:"uniqueid"`
-	GroupClass string `json:"class"`
+	Action     Action   `json:"action"`
+	Lights     []string `json:"lights"`
+	Name       string   `json:"name"`
+	GroupType  string   `json:"type"`
+	ModelID    string   `json:"modelid"`
+	UniqueID   string   `json:"uniqueid"`
+	GroupClass string   `json:"class"`
 }
