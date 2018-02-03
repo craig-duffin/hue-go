@@ -5,15 +5,15 @@ import (
 	"net/http"
 )
 
-const bridgeURL string = "http://192.168.0.64/api/"
-
 type Client struct {
 	username string
+	bridge string
 }
 
-func NewClient(user string) *Client {
+func NewClient(user, bridgeAddress string) *Client {
 	return &Client{
 		username: user,
+		bridge: bridgeAddress,
 	}
 }
 
